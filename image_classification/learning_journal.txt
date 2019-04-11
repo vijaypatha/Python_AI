@@ -5,4 +5,8 @@ According to the project_instruction, there are 4 main objectives
 4) Time and accuracy tradeoff
 3) which model is best, meaning within CNN, we are using 3 CNNs times 
 
-To achieve the four objectives i will have to 
+I will be writing functions in the check_images.py file to accomplish the above mentioned four objectives. 
+
+So lets go to check_images.py file 
+
+1) The performance of a CNN model can be seen when the classification or the output of the model matches with the file name of the image in the pet_images file. 
