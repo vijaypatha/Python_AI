@@ -1,0 +1,8 @@
+According to the project_instruction, there are 4 main objectives
+
+2) Identify the dog breeds
+1) classify dog or not dog
+4) Time and accuracy tradeoff
+3) which model is best, meaning within CNN, we are using 3 CNNs times 
+
+To achieve the four objectives i will have to 
