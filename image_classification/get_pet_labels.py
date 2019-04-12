@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # */AIPND-revision/intropyproject-classify-pet-images/get_pet_labels.py
 #                                                                             
-# PROGRAMMER: Vijay P
+# PROGRAMMER: 
 # DATE CREATED:                                  
 # REVISED DATE: 
 # PURPOSE: Create the function get_pet_labels that creates the pet labels from 
@@ -23,7 +23,7 @@ from os import listdir
 #       in the return statement with results_dic dictionary that you create 
 #       with this function
 # 
-def get_pet_labels("pet_images/"):
+def get_pet_labels(image_dir):
     """
     Creates a dictionary of pet labels (results_dic) based upon the filenames 
     of the image files. These pet image labels are used to check the accuracy 
@@ -40,9 +40,6 @@ def get_pet_labels("pet_images/"):
       List. The list contains for following item:
          index 0 = pet image label (string)
     """
-    print("\nPrints 10 filenames from folder pet_images/")
-for idx in range(0, 10, 1):
-    print("{:2d} file: {:>25}".format(idx + 1, filename_list[idx]) )
     # Replace None with the results_dic dictionary that you created with this
     # function
     return None
