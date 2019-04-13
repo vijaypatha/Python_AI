@@ -9,8 +9,10 @@ I will be writing functions in the check_images.py file to accomplish the above 
 
 So lets go to check_images.py file 
 
-1) The performance of a CNN model can be seen when the classification or the output of the model matches with the file name of the image in the pet_images file. 
+Day 1) The performance of a CNN model can be seen when the classification or the output of the model matches with the file name of the image in the pet_images file. It took me two days to make sense of the instruction and i'm not even close to fully understanding why, how, what to do next. 
 
-2) It took me two days to make sense of the instruction and i'm not even close to fully understanding why, how, what to do next. 
+Day 3) 4/12 TOday I got little sense into what they are asking. check_images.py has collections of functions that are defined in the other files suchs as get_input_args.py, get_pet_labels etc. So, All i have to is, go to individual files and define the functions and update teh check_images.py. So structrually, makes sense. 
 
-So my understanding is that i need to edit check_images file. 
+Although the objective is for me to learn python syntax, it is a long shot for me to write a piece of code that will extract the names in the get_pet_labels and create a dictionary. I think it is matter of exposure and practice. Nothing to feel worried about, right now. 
+
+Day 4) 4/13
