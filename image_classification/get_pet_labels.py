@@ -62,8 +62,8 @@ def get_pet_labels(image_dir):
            #          extracted dog breed name in the variable pet_label 
            #          that's created as an empty string ABOVE
            #pass
-           else:
-              return idx
+           #else:
+            #  return idx
 
            # If filename doesn't already exist in dictionary add it and it's
            # pet label - otherwise print an error message because indicates 
