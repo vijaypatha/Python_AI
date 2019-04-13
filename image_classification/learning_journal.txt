@@ -15,4 +15,8 @@ Day 3) 4/12 TOday I got little sense into what they are asking. check_images.py 
 
 Although the objective is for me to learn python syntax, it is a long shot for me to write a piece of code that will extract the names in the get_pet_labels and create a dictionary. I think it is matter of exposure and practice. Nothing to feel worried about, right now. 
 
-Day 4) 4/13
+Day 4) 4/13 Classify images -> what is this file? What does it do? 
+In this file i will be creating a function that will classify the images or creates classifer labels and then compares to pet image labels
+
+We created a classifer.py, in this file there is function that will create classifer lables. This function in imported into the classify_images.py to generate classifer labels
+
