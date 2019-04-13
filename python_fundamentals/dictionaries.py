@@ -17,14 +17,19 @@ d = {}
 d['foo'] = 100
 d['bar'] = 200
 d['baz'] = 300
+print(d)
 
 d = dict([
     ('foo', 100),
     ('bar', 200),
     ('baz', 300)
 ])
+print(d)
 
 d = dict(foo=100, bar=200, baz=300)
+print(d)
+
+d = dict()
 print(d)
 
 # how to build a dictonary using key value dict! 

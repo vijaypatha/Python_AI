@@ -18,5 +18,7 @@ Although the objective is for me to learn python syntax, it is a long shot for m
 Day 4) 4/13 Classify images -> what is this file? What does it do? 
 In this file i will be creating a function that will classify the images or creates classifer labels and then compares to pet image labels
 
-We created a classifer.py, in this file there is function that will create classifer lables. This function in imported into the classify_images.py to generate classifer labels
+We created a classifer.py, in this file there is function that will create classifer lables. This function in imported into the classify_images.py to generate classifer labels.
+
+There is actuall coding to do, now things are gettng confusing. Its like understanding the dynamics of swimming but you need to start "ACTUALLY" swim, feel the anxitey. By no means, I sould assume i will learn how to write correct in single sitting. I will be challenging and fustrating until i get it right. Its the process of getting right is more imprtant then getting it right in the first attempt. 
 

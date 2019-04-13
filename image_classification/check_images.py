@@ -64,7 +64,7 @@ def main():
     # Function that checks Pet Images in the results Dictionary using results    
     check_creating_pet_image_labels(results)
 
-
+# STILL HERE 04.13
     # TODO 3: Define classify_images function within the file classiy_images.py
     # Once the classify_images function has been defined replace first 'None' 
     # in the function call with in_arg.dir and replace the last 'None' in the

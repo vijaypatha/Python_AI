@@ -41,7 +41,7 @@ def get_pet_labels(image_dir):
          index 0 = pet image label (string)
     """
  # Creates list of files in directory
-    in_files = listdir(image_dir)
+    in_files = listdir("image_dir")
 # Creates empty dictionary for the results (pet labels, etc.)
     results_dic = dict()
     # Processes through each file in the directory, extracting only the words
@@ -61,7 +61,9 @@ def get_pet_labels(image_dir):
            #          accessed by in_files[idx]. Be certain to place the 
            #          extracted dog breed name in the variable pet_label 
            #          that's created as an empty string ABOVE
-           pass
+           #pass
+           else:
+              return idx
 
            # If filename doesn't already exist in dictionary add it and it's
            # pet label - otherwise print an error message because indicates 
@@ -75,4 +77,4 @@ def get_pet_labels(image_dir):
      
     # Replace None with the results_dic dictionary that you created with this
     # function
-    return results_dic
+    print(results_dic) 
