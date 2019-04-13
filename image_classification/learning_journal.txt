@@ -10,3 +10,7 @@ I will be writing functions in the check_images.py file to accomplish the above 
 So lets go to check_images.py file 
 
 1) The performance of a CNN model can be seen when the classification or the output of the model matches with the file name of the image in the pet_images file. 
+
+2) It took me two days to make sense of the instruction and i'm not even close to fully understanding why, how, what to do next. 
+
+So my understanding is that i need to edit check_images file. 
