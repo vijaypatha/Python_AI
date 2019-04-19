@@ -24,6 +24,8 @@ from os import listdir
 #       with this function
 # 
 def get_pet_labels(image_dir):
+    in_files = listdir(image_dir)
+
     """
     Creates a dictionary of pet labels (results_dic) based upon the filenames 
     of the image files. These pet image labels are used to check the accuracy 
@@ -31,7 +33,7 @@ def get_pet_labels(image_dir):
     filenames of the images contain the true identity of the pet in the image.
     Be sure to format the pet labels so that they are in all lower case letters
     and with leading and trailing whitespace characters stripped from them.
-    (ex. filename = 'Boston_terrier_02259.jpg' Pet label = 'boston terrier')
+    (ex. filename = '   ' Pet label = 'boston terrier')
     Parameters:
      image_dir - The (full) path to the folder of images that are to be
                  classified by the classifier function (string)
@@ -50,18 +52,14 @@ def get_pet_labels(image_dir):
          2) Create a dictioanry that will host both filename and pet lable. 
     """
  # Creates list of files in directory
- path = "C:\Users\vipatha\Documents\Python_AI\Python_AI\image_classification\pet_images"
-    in_files = listdir(path)
 # Creates empty dictionary for the results (pet labels, etc.)
     results_dic = dict()
     # Processes through each file in the directory, extracting only the words
     # of the file that contain the pet image label
     for idx in range(0, len(in_files), 1):
-       
        # Skips file if starts with . (like .DS_Store of Mac OSX) because it 
        # isn't an pet image file
-       if in_files[idx][0] != ".":
-           
+       if in_files[idx][0] != ".":           
            # Creates temporary label variable to hold pet label name extracted 
            pet_label = ""
 
@@ -72,10 +70,10 @@ def get_pet_labels(image_dir):
            #          extracted dog breed name in the variable pet_label 
            #          that's created as an empty string ABOVE
             image_name = in_files[idx].split("_")
-
-           #pass
-           #else:
-            #  return idx
+            for word in image_name:
+            if word.isalpha():
+                pet_label += word.lower() + " "
+                pet_label = pet_label.strip()
 
            # If filename doesn't already exist in dictionary add it and it's
            # pet label - otherwise print an error message because indicates 
@@ -86,7 +84,8 @@ def get_pet_labels(image_dir):
            else:
                print("** Warning: Duplicate files exist in directory:", 
                      in_files[idx])
+                     return(results_dic) 
      
     # Replace None with the results_dic dictionary that you created with this
     # function
-    print(results_dic) 
+   
