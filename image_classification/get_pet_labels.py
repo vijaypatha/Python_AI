@@ -39,9 +39,19 @@ def get_pet_labels(image_dir):
       results_dic - Dictionary with 'key' as image filename and 'value' as a 
       List. The list contains for following item:
          index 0 = pet image label (string)
+
+         TODO HIghlevle: Goal is convert a filename = 'Boston_terrier_02259.jpg' into Pet label = 'boston terrier' and create a dictionary with {'Boston_terrier_02259.jpg': 'boston terrier' }
+         
+         #Psudocode 
+         1) Take all the file names from the folder and format them
+            a) to access the file names, use listdir 
+            b) use a forloop to access the files names in the above list.
+
+         2) Create a dictioanry that will host both filename and pet lable. 
     """
  # Creates list of files in directory
-    in_files = listdir(image_dir)
+ path = "C:\Users\vipatha\Documents\Python_AI\Python_AI\image_classification\pet_images"
+    in_files = listdir(path)
 # Creates empty dictionary for the results (pet labels, etc.)
     results_dic = dict()
     # Processes through each file in the directory, extracting only the words
