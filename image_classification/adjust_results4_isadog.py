@@ -67,4 +67,18 @@ def adjust_results4_isadog(results_dic, dogfile):
     Returns:
            None - results_dic is mutable data type so no return needed.
     """           
-    None
+    
+     L = [0,0]
+    f = open(dogfile,'r')
+    file_data = f.read()
+    f.close()
+    for key in results_dic:
+        results_dic[key].extend(L)
+        if results_dic[key][0] in file_data:
+            results_dic[key][3] = 1
+        split_classifier = results_dic[key][1].split("  ")
+        for word in split_classifier:
+            if word in file_data:
+                results_dic[key][4] = 1
+                break
+None
