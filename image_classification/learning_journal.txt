@@ -20,5 +20,32 @@ In this file i will be creating a function that will classify the images or crea
 
 We created a classifer.py, in this file there is function that will create classifer lables. This function in imported into the classify_images.py to generate classifer labels.
 
-There is actuall coding to do, now things are gettng confusing. Its like understanding the dynamics of swimming but you need to start "ACTUALLY" swim, feel the anxitey. By no means, I sould assume i will learn how to write correct in single sitting. I will be challenging and fustrating until i get it right. Its the process of getting right is more imprtant then getting it right in the first attempt. 
+Day 5-10) Now things are gettng confusing. Its like understanding the dynamics of swimming but you need to start "ACTUALLY" swim, feel the anxitey. By no means, I sould assume i will learn how to write correct in single sitting. I will be challenging and fustrating until i get it right. Its the process of getting right is more imprtant then getting it right in the first attempt. 
 
+This is doabel but requires lot of practice with the code. What was most helpful is to see the results of a code and then build code around it. 
+
+for example:
+
+From facing an error: 
+
+name_list = ["tom", "dick", "harry"]
+name_dict = dict()
+for name in range(0, len(name_list), 1):
+    name_dict[name_list[name]] = name_list[name]
+    print(name_dict)
+
+Getthing this result. 
+name_list = ["tom", "dick", "harry"]
+d = dict((n, n) for n in name_list)
+print(d)
+
+
+results_dic = {"FIRST": 3, "second": 2}
+for key in results_dic:
+    model_lab = [key]
+    print(model_lab)
+
+The hardest part of the project is understanding the instructions. Once i started to see how these files were interaction or realated, it became easier.
+however the coding was not intuitaive. 
+
+Week 3 - I'm running out of time and im making very small progress in gaining the skillest to finish this project. I feel it will take time to gain the effciency, accuracy, and speed to code python. Right now i'm still playing with tasks in hackerrank. This looks way beyond my capacity. 
