@@ -69,19 +69,13 @@ def adjust_results4_isadog(results_dic, dogfile):
     """           
   dognames_dic = dict()
 
-    # Reads in dognames from file, 1 name per line & automatically closes file
     with open(dogfile, "r") as infile:
-        # Reads in dognames from first line in file
         line = infile.readline()
-
-        # Processes each line in file until reaching EOF (end-of-file) by 
-        # processing line and adding dognames to dognames_dic with while loop
         while line != "":
 
             # TODO: 4a. REPLACE pass with CODE to remove the newline character
             #           from the variable line  
             #
-            # Process line by striping newline from line
             line = line.rstrip()
 
             # TODO: 4b. REPLACE pass with CODE to check if the dogname(line) 
@@ -94,8 +88,6 @@ def adjust_results4_isadog(results_dic, dogfile):
             if line not in dognames_dic:
                 dognames_dic.update({line: 1})
 
-            # Reads in next line in file to be processed with while loop
-            # if this line isn't empty (EOF)
             line = infile.readline()
     print(dognames_dic)
 
@@ -107,7 +99,6 @@ def adjust_results4_isadog(results_dic, dogfile):
     # then label "is a dog" index3/4=1 otherwise index3/4=0 "not a dog"
     for key in results_dic:
 
-        # Pet Image Label IS of Dog (e.g. found in dognames_dic)
         if results_dic[key][0] in dognames_dic:
             
             # Classifier Label IS image of Dog (e.g. found in dognames_dic)
@@ -126,7 +117,6 @@ def adjust_results4_isadog(results_dic, dogfile):
             else:
                 results_dic[key].extend((1, 0))
 
-        # Pet Image Label IS NOT a Dog image (e.g. NOT found in dognames_dic)
         else:
             # TODO: 4d. REPLACE pass BELOW with CODE that adds the following to
             #           results_dic dictionary for the key indicated by the 
