@@ -56,14 +56,7 @@ def get_pet_labels(image_dir):
     # Retrieve the filenames from folder specified as image_dir/
     in_files = listdir(image_dir)
     # Create empty dictionary named results_dic
-    results_dic = dict()
-    
-    # Determine number of items in dictionary
-    items_in_dic = len(results_dic)
-          
-    # Add new key-value pairs to dictionary ONLY when key doesn't already exist. 
-    # This dictionary's value is a list that contains only 1 item - the pet image label
-    
+    results_dic = dict()          
     for idx in range (0, len(in_files), 1):
         # Skips file if starts with . (like .DS_Store of Mac OSX) because it 
         # isn't an pet image file
@@ -83,11 +76,9 @@ def get_pet_labels(image_dir):
         else:
             print("** Warning: Key=", in_files[idx], "already exists in results_dic with value =", results_dic[in_files[idx]])
             
-    # Iterate through a dictionary printing all keys and their associated values
     print("\nPrinting all key-value pairs in dictionary results_dic:")
     for key in results_dic:
         print("Filename=", key, "   Pet label=", results_dic[key][0])
         
-    # Replace None with the results_dic dictionary that you created with this
-    # function
+    # Replace None with the results_dic dictionary that you created with this function
     return results_dic
