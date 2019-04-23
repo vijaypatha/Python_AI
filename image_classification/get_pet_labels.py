@@ -55,18 +55,11 @@ def get_pet_labels(image_dir):
     
     # Retrieve the filenames from folder specified as image_dir/
     in_files = listdir(image_dir)
-    
-    # Print 10 of the filenames from folder specified as image_dir/
-    print("\nPrints 10 filenames from folder specified as image_dir")
-    for idx in range (0, min(10, len(in_files)), 1):
-        print("{:2d} file: {:>25}".format(idx + 1, in_files[idx]))
-    
     # Create empty dictionary named results_dic
     results_dic = dict()
     
     # Determine number of items in dictionary
     items_in_dic = len(results_dic)
-    print("\nEmpty Dictionary results_dic - n items=", items_in_dic)
           
     # Add new key-value pairs to dictionary ONLY when key doesn't already exist. 
     # This dictionary's value is a list that contains only 1 item - the pet image label
