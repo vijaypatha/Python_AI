@@ -65,7 +65,7 @@ def classify_images(images_dir, results_dic, model):
      Returns:
            None - results_dic is mutable data type so no return needed.         
     """
-     for key in results_dic:
+    for key in results_dic:
         # TODO: 3a. Set the string variable model_label to be the string that's 
        #           returned from using the classifier function instead of the   
        #           empty string below.
